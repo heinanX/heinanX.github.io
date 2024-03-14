@@ -5,11 +5,7 @@ import MobileHeaderNav from "./MobileHeaderNav";
 const Header = () => {
   const navigation = [
     {
-      title: "home",
-      href: "/",
-    },
-    {
-      title: "about",
+      title: "about me",
       href: "/about",
     },
     {
