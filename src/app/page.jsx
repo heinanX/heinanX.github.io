@@ -1,29 +1,63 @@
-import Image from "next/image";
-import silhouette from './_assets/silhouette.png';
-
+"use client";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+import { BiGame } from "react-icons/bi";
+import checkLocalStorage from "./_utilities/checkLocalStorage";
+import LoadBar from "./_components/LoadBar";
 
 const Home = () => {
+  const router = useRouter();
+  const [loading, setLoading] = useState(true);
+
+  const handleBtnAction = (action) => {
+    if (!action) {
+      localStorage.setItem("preference", "skillset");
+      return router.push("/skillset");
+    }
+    setSequence(1);
+  };
+
+  useEffect(() => {
+  const isLsSet = checkLocalStorage('preference');
+  if (isLsSet) {
+    return router.push("/skillset");
+  }
+  setLoading(false)
+  }, []);
+
   return (
-    <main className="flex flex-col items-center min-h-screen gap-4 p-10 bg-white dark:bg-custBackground">
-      <section className="py-10 text-center">
-        <h1 className="inline px-1 text-5xl bg-custYellow text-custTurq">.hello thurr</h1>
-      </section>
+    <>
+    {loading ? <LoadBar /> : 
+    <div className="flex flex-col items-center pb-4 space-y-10">
+      <span className="text-6xl text-black dark:text-white animate-spin-slow ">
+        <BiGame />
+      </span>
+      <div className=" max-w-[321px] md:max-w-none">
+        <h1 className="font-bold uppercase text-7xl font-header">
+          Wish to know
+          <br />
+          <span className="text-custYellow">me</span> better first?
+        </h1>
+      </div>
 
-      <section className="pb-10">
-        <Image src={silhouette} alt="Silhouette of me free falling" className="w-full" />
-      </section>
-
-      <section className="flex flex-col gap-2  text-custTurq selection:bg-transparent">
-        <p className="text-lg">I&apos;m a <span className="text-3xl text-custHotpink selection:bg-custYellow">.bold</span> web developer</p>
-        <ul className="list-[square] list-inside ml-6 flex flex-col gap-2">
-          <li className="text-lg text-[#1e6564]">who thrives in the <span className="text-transparent hover:text-teal-100 hover:cursor-wait">unknown</span>,</li>
-          <li className="text-base">finds solutions through <span className="underline px-[2px] bg-custYellow text-custTurq selection:bg-custHotpink selection:text-custYellow">.hardWork</span> and a <span className="text-xl underline">.quickUptake</span>,</li>
-          <li className="text-base">and whose strength lies in <span className="text-teal-100"> <span className="text-nowrap">[ structured ]</span> and <span className="text-nowrap">{"<clean code>"}</span>.</span></li>
-        </ul>
-        <p className="inline px-2 mt-6 text-2xl text-white selection:bg-transparent bg-custTurq">I also have experience as a creative & graphic designer</p>
-      </section>
-    </main>
+      <div className="flex flex-row gap-5 pt-10 text-lg sm:flex-row sm:gap-10 sm:text-4xl lg:pt-20">
+        <button
+          onClick={() => handleBtnAction(true)}
+          className="roundedBtn bg-custTurq text-custBackground"
+        >
+          yes way!
+        </button>
+        <button
+          onClick={() => handleBtnAction(false)}
+          className="border border-white roundedBtn"
+        >
+          later skater
+        </button>
+      </div>
+    </div>
+    }
+    </>
   );
-}
+};
 
-export default Home
+export default Home;
