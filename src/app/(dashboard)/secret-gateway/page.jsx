@@ -1,5 +1,6 @@
-import React from "react";
-import LandingPagePersonality from "../../_components/LandingPagePersonality/LandingPagePersonality";
+import Image from "next/image";
+import SecretMessage from "../../_components/SecretMessage";
+import silhouette from "../../_assets/silhouette.png"
 
 const page = () => {
   return (
@@ -10,7 +11,20 @@ const page = () => {
         </h1>
       </section>
 
-      <LandingPagePersonality />
+      <div className="w-full flex flex-col justify-center items-center lg:flex-row lg:gap-[5%]">
+      <section className="flex justify-center w-full lg:w-1/2 pb-10 sm:pt-5 sm:pb-18 max-w-[244px] sm:max-w-[400px]">
+        <Image
+          src={silhouette}
+          priority={true}
+          alt="Silhouette of me free falling"
+          className="w-4/5 select-none animate hover:animate-bounce-slow"
+        />
+      </section>
+
+      <section className="flex flex-col items-center w-full gap-2 select-none lg:w-1/2 text-custTurq">
+        <SecretMessage />
+      </section>
+    </div>
     </>
   );
 };

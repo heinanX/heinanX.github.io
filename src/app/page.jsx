@@ -13,14 +13,19 @@ const Home = () => {
     if (!action) {
       localStorage.setItem("preference", "skillset");
       return router.push("/skillset");
+    } else {
+      localStorage.setItem("preference", "personality");
+      router.push('/secret-gateway')
     }
-    setSequence(1);
   };
 
   useEffect(() => {
-  const isLsSet = checkLocalStorage('preference');
-  if (isLsSet) {
+  const preference = checkLocalStorage('preference');
+  if (preference === 'skillset') {
     return router.push("/skillset");
+  }
+  if (preference === 'personality') {
+    return router.push("/secret-gateway");
   }
   setLoading(false)
   }, []);
