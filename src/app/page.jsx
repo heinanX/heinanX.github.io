@@ -21,10 +21,12 @@ const Home = () => {
 
   useEffect(() => {
   const preference = checkLocalStorage('preference');
+  console.log('this is preference', preference);
   if (preference === 'skillset') {
     return router.push("/skillset");
   }
   if (preference === 'personality') {
+    console.log('im in here');
     return router.push("/secret-gateway");
   }
   setLoading(false)
@@ -38,11 +40,11 @@ const Home = () => {
         <BiGame />
       </span>
       <div className=" max-w-[321px] md:max-w-none">
-        <h1 className="font-bold uppercase text-7xl font-header">
-          Wish to know
+        <h2 className="font-bold uppercase text-7xl font-header">
+          Wish to know my
           <br />
-          <span className="text-custYellow">me</span> better first?
-        </h1>
+          <span className="text-custYellow">character</span> better?
+        </h2>
       </div>
 
       <div className="flex flex-row gap-5 pt-10 text-lg sm:flex-row sm:gap-10 sm:text-4xl lg:pt-20">
@@ -56,7 +58,7 @@ const Home = () => {
           onClick={() => handleBtnAction(false)}
           className="border border-white roundedBtn"
         >
-          later skater
+          skills first
         </button>
       </div>
     </div>

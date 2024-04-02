@@ -4,7 +4,7 @@ const checkLocalStorage = (key) => {
     if (typeof window !== 'undefined') {
         const lsKey = localStorage.getItem(key);
         if (lsKey !== null) {
-            return true;
+            return lsKey
         }
     }
     return false;

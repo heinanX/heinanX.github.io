@@ -3,9 +3,9 @@ import DisplayMessage from "./DisplayMessage/DisplayMessage";
 const SecretMessage = () => {
   return (
     <div className="space-y-2 max-w-[315px] sm:max-w-[450px] lg:max-w-[520px]">
-      <h1 className="hidden px-1 text-5xl lg:inline lg:text-6xl bg-custHotpink text-custYellow">
+      <h2 className="hidden px-1 text-5xl lg:inline lg:text-6xl bg-custHotpink text-custYellow">
         .hello thurr
-      </h1>
+      </h2>
       <p className="text-4xl font-light lg:pt-5 sm:text-6xl lg:7xl font-header">
         I am a
         <DisplayMessage

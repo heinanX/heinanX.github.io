@@ -6,9 +6,9 @@ const page = () => {
   return (
     <>
       <section className="mb-[10%] sm:mb-[5%] text-center lg:hidden">
-        <h1 className="inline px-1 text-5xl select-none lg:text-6xl bg-custYellow text-custTurq">
+        <h2 className="inline px-1 text-5xl select-none lg:text-6xl bg-custYellow text-custTurq">
           .hello thurr
-        </h1>
+        </h2>
       </section>
 
       <div className="w-full flex flex-col justify-center items-center lg:flex-row lg:gap-[5%]">
