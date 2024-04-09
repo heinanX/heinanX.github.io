@@ -29,12 +29,16 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-  .trad-ul {
+  /* .trad-ul {
     list-style-type: square;
     @apply  uppercase pl-6 tracking-wide text-sm
   }
   .trad-ul li {
     @apply text-white uppercase font-roboto font-medium
+  } */
+
+  .flex-center {
+    @apply flex justify-center items-center
   }
 }
 

@@ -6,7 +6,7 @@ const LanguageSettings = () => {
         localStorage.setItem('language', lang)
       }
   return (
-    <select name="lang" id="" onChange={(e) => switchLanguage(e.target.value)}>
+    <select name="lang" id="" onChange={(e) => switchLanguage(e.target.value)} className="py-2">
     <option value="0">Eng</option>
     <option value="1">Sve</option>
     <option value="2">Jap</option>

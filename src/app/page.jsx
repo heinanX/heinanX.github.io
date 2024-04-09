@@ -41,9 +41,9 @@ const Home = () => {
       </span>
       <div className=" max-w-[321px] md:max-w-none">
         <h2 className="font-bold uppercase text-7xl font-header">
-          Wish to know my
+          Wish to know
           <br />
-          <span className="text-custYellow">character</span> better?
+          <span className="text-custYellow">me</span> better?
         </h2>
       </div>
 
