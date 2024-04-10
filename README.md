@@ -1,6 +1,6 @@
 # portfolio-v2
 
-Rebuild of my first portfolio utilizing the Next.js framework and javascript.
+A new and imporved upon portfolio and Web-cv, utilizing Next.js, tailwindcss and JavaScript.
 
 ## Getting Started
 

@@ -33,11 +33,27 @@ module.exports = {
             opacity: "0"
           }
         },
+        'transport-linear': {
+          "0%": {
+            transform: "translateX(-100%)",
+            opacity: "0"
+          },
+          "50%": {
+            transform: "translateX(0)",
+            opacity: "1"
+          },
+          "100%": {
+            transform: "translateX(100%)",
+            opacity: "0"
+          }
+        },
       },
       animation: {
+        'trip': 'transport-linear 4s linear infinite',
         'make-a-trip': 'transport 2s linear infinite',
         'bounce-slow': 'bounceLow 1s linear infinite',
         'spin-slow': 'spin 2s linear infinite',
+        'pulse-slow': 'pulse 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

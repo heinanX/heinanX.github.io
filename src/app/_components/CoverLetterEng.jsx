@@ -16,7 +16,7 @@ const CoverLetterEng = () => {
     "うわあー",
   ];
 
-  const greeting = ["Hi again", "Hej igen", , "こんいちは"];
+  const greeting = ["Hello ", "Hej igen", "こんいちは"];
 
   const switchLanguage = (lang) => {
     return setIndex(lang);

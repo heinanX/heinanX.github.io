@@ -4,7 +4,7 @@ import { FaArrowAltCircleDown } from "react-icons/fa";
 
 const ScrollToBottom = () => {
   const options = {
-    duration: 500,
+    duration: 1000,
     smooth: true,
   };
   const scrollToBottom = () => {

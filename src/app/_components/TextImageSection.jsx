@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 const TextImageSection = ({image, alt, component: Component}) => {
-console.log('im in textImage');
 
   return (
     <article className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">

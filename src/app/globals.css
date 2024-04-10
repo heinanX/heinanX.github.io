@@ -37,8 +37,11 @@ body {
     @apply text-white uppercase font-roboto font-medium
   } */
 
-  .flex-center {
-    @apply flex justify-center items-center
+  .flex-center-col {
+    @apply flex flex-col justify-center items-center
+  }
+  .flex-center-row {
+    @apply flex flex-row justify-center items-center
   }
 }
 
