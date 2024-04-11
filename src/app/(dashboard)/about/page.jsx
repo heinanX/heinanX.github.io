@@ -7,6 +7,7 @@ import PersonalitySection from "@/app/_components/PersonalitySection";
 import TechStackSection from "@/app/_components/TechStackSection";
 import ArticleTwoCols from "@/app/_components/ArticleTwoCols";
 import CoverLetterSection from "@/app/_components/CoverLetterSection";
+import GreetingSection from "@/app/_components/GreetingSection";
 
 const page = () => {
   return (
@@ -19,8 +20,11 @@ const page = () => {
             component={CoverLetterEng}
           />
         </article> */}
+        <ArticleTwoCols
+            component={GreetingSection}
+            custCss={"max-w-screen-xl"}
+          />
         
-        <ContactIcons textSize="text-6xl" />
         <div className="flex justify-center w-full bg-custTurq">
           <ArticleTwoCols
             component={CoverLetterSection}
