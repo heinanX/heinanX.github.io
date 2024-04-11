@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const ContactIcons = ({ textSize }) => {
   return (
-    <div className={`flex flex-row justify-center gap-8 py-4 ${textSize}`}>
+    <article className={`flex flex-row justify-center gap-8 py-14 ${textSize}`}>
       <Link href={'https://github.com/heinanX'} className="cursor-pointer hover:text-custTurq">
         <FaGithub />
       </Link>
@@ -13,7 +13,7 @@ const ContactIcons = ({ textSize }) => {
       <Link href={'mailto:eskilson.Linda@gmail.com'} className="cursor-pointer hover:text-custTurq">
         <FaEnvelope />
       </Link>
-    </div>
+    </article>
   );
 };
 
