@@ -1,5 +1,6 @@
 import ArticleTwoCols from "@/app/_components/ArticleTwoCols";
-import cvImage from "@/_assets/CV_Image.PNG";
+import cvImageEng from "@/_assets/cv-eng_img.PNG";
+import cvImageSwe from "@/_assets/cv-swe_img.PNG";
 import CV from "@/app/_components/CV";
 
 const CvSection = () => {
@@ -7,7 +8,7 @@ const CvSection = () => {
     <>
       <section className="flex flex-col items-center">
         <CV
-          cvImage={cvImage}
+          cvImage={cvImageEng}
           href={"/LindaEskilsson_CV-eng.pdf"}
           altText={"English version of CV"}
           btnText={"Download ENG"}
@@ -16,7 +17,7 @@ const CvSection = () => {
 
       <section className="flex flex-col items-center">
         <CV
-          cvImage={cvImage}
+          cvImage={cvImageSwe}
           href={"/LindaEskilsson_CV-sve.pdf"}
           altText={"Swedish version of CV"}
           btnText={"Download SVE"}
