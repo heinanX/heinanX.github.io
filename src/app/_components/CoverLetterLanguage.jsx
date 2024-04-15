@@ -1,25 +1,29 @@
-import ReversedBtn from "./Buttons/ReversedBtn"
-import UnstyledBtn from "./UnstyledBtn"
+import LargeHeadlineReversed from "./Headings/LargeHeadlineReversed"
+import LargeHeadline from "./Headings/LargeHeadline"
+import HeaderBtn from "./Buttons/HeaderBtn"
 
 const CoverLetterLanguage = ({setLanguage}) => {
   return (
-    <section className="font-bold dark:text-white text-custBackground text-[150px] flex flex-col justify-center">
-    <ReversedBtn
+    <div className="flex flex-col">
+    <HeaderBtn
       func={() => setLanguage("en")}
       text={"eng"}
       custCss={"text-left"}
+      component={LargeHeadlineReversed}
     />
-    <UnstyledBtn
+    <HeaderBtn
       func={() => setLanguage("sv")}
       text={"Sve"}
-      custCss={"leading-none uppercase text-right"}
+      custCss={"text-right"}
+      component={LargeHeadline}
     />
-    <ReversedBtn
+    <HeaderBtn
       func={() => setLanguage("jp")}
       text={"日本語"}
-      custCss={"text-left"}
+      custCss={""}
+      component={LargeHeadlineReversed}
     />
-  </section>
+  </div>
   )
 }
 

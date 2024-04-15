@@ -43,6 +43,12 @@ body {
   .flex-center-row {
     @apply flex flex-row justify-center items-center
   }
+  .article-section {
+    @apply w-full lg:w-1/2 
+  }
+  .article-section-centered {
+    @apply w-full lg:w-1/2 flex justify-center
+  }
 }
 
 @layer base {

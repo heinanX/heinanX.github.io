@@ -23,20 +23,20 @@ const Carousel = ({ arr }) => {
   }, []);
 
   return (
-    <>
+    <ul className="flex items-center justify-center w-full h-40 overflow-hidden">
       {play ? (
         arr.map((item, i) => (
-          <h1
+          <li
             key={i}
             className={`text-7xl ${index === i ? "animate-trip" : "hidden"}`}
           >
             {item.tech}
-          </h1>
+          </li>
         ))
       ) : (
         <></>
       )}
-    </>
+    </ul>
   );
 };
 

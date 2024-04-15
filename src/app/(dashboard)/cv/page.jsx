@@ -9,12 +9,12 @@ const CvSection = () => {
       <section className="flex flex-col items-center">
         <CV
           cvImage={cvImageEng}
-          href={"/LindaEskilsson_CV-eng.pdf"}
+          href={"//LindaEskilsson_CV-eng.pdf"}
           altText={"English version of CV"}
           btnText={"Download ENG"}
         />
       </section>
-
+      
       <section className="flex flex-col items-center">
         <CV
           cvImage={cvImageSwe}

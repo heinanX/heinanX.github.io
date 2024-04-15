@@ -26,23 +26,20 @@ const traits = [
 ];
 
 const PersonalityTraits = ({ mouseAction }) => {
-
   return (
-    <div className="px-6">
-      <ul className="relative grid grid-cols-2 text-2xl tracking-wider uppercase gap-y-10">
-        {traits.map((trait, index) => (
-          <li
-            key={index}
-            onClick={() => mouseAction(trait.example, true)}
-            onMouseOut={() => mouseAction('', false)}
-            className="hover:cursor-pointer hover:dark:text-custBackground"
-          >
-            <span className="text-md">+ </span>
-            {trait.item}
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ul className="grid grid-cols-1 text-xl tracking-wider uppercase xl:text-2xl md:grid-cols-2 gap-y-10">
+      {traits.map((trait, index) => (
+        <li
+          key={index}
+          onClick={() => mouseAction(trait.example, true)}
+          onMouseOut={() => mouseAction("", false)}
+          className="pl-4 hover:cursor-pointer hover:text-custBackground"
+        >
+          <span className="text-md">+ </span>
+          {trait.item}
+        </li>
+      ))}
+    </ul>
   );
 };
 

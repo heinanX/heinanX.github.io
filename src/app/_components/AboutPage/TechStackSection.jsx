@@ -1,6 +1,8 @@
 "use client";
 import TechStack from "@/_components/TechStack";
-import Carousel from "./Carousel";
+import Carousel from "../Carousel";
+import LargeHeadlineReversed from "../Headings/LargeHeadlineReversed";
+import LargeHeadline from "../Headings/LargeHeadline";
 
 const currentStack = [
   {
@@ -53,15 +55,12 @@ const currentStack = [
 const TechStackSection = () => {
   return (
     <>
-      <section>
-        <article className="dark:text-custYellow uppercase text-[150px] font-bold">
-          <section className="scale-x-[-1] text-right leading-none">
-            tech
-          </section>
-          <section className="leading-none">stack</section>
-        </article>
+      <section className="article-section dark:text-custYellow lg:order-2">
+      <LargeHeadlineReversed text={'tech'} />
+      <LargeHeadline text={'stack'} custCss={'text-right'} />
       </section>
-      <section className="overflow-hidden text-center">
+
+      <section className="overflow-hidden text-center article-section">
         <Carousel arr={currentStack} />
         <TechStack arr={currentStack} />
       </section>

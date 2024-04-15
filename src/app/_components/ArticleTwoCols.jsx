@@ -1,11 +1,11 @@
-import React from 'react'
-
-const ArticleTwoCols = ({component: Component, custCss}) => {
+const ArticleTwoCols = ({ component: Component, custCss }) => {
   return (
-    <article  className={`grid items-center min-h-screen grid-cols-1 px-10 py-12 xl:grid-cols-2 ${custCss}`}>
-        <Component />
+    <article
+      className={`flex items-center max-w-screen-xl justify-center gap-y-14 xl:gap-0 py-20 md:min-h-screen flex-col w-full px-10 lg:flex-row ${custCss}`}
+    >
+      <Component />
     </article>
-  )
-}
+  );
+};
 
-export default ArticleTwoCols
+export default ArticleTwoCols;
