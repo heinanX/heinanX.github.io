@@ -14,8 +14,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${inter.className} dark:bg-custBackground`}>
         <Header />
-        <main className="flex flex-col items-center justify-center w-full min-h-screen gap-4 py-24">
-        {children}
+        <main className="flex flex-col items-center justify-center w-full min-h-screen gap-4 py-24 xl:py-0 ">
+          {children}
         </main>
       </body>
     </html>

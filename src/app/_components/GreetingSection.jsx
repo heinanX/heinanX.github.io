@@ -15,9 +15,9 @@ const GreetingSection = () => {
           className="max-w-[550px] w-3/4"
         />
         
-      <ContactIcons textSize="text-6xl" />
+      <ContactIcons textSize="text-4xl md:text-6xl" />
       </section>
-      <section className="flex flex-col justify-center" /* className="md:order-2" */>
+      <section className="flex flex-col items-center justify-center" /* className="md:order-2" */>
         <AboutHeader text={"This is "} custCss={''} />
         <AboutHeader text={"Me 一"} custCss={'text-custHotpink'} />
         <AboutHeader text={"Linda"} custCss={''} />

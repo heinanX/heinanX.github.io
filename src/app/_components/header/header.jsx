@@ -10,7 +10,7 @@ const Header = () => {
     },
     {
       title: "projects",
-      href: "/projects",
+      href: "https://github.com/heinanX?tab=repositories",
     },
     {
       title: "cv",
@@ -18,7 +18,7 @@ const Header = () => {
     },
   ];
   return (
-    <header className="absolute top-0 left-0 flex flex-row items-center justify-between w-full h-20 px-10 border-b border-slate-900">
+    <header className="absolute top-0 left-0 z-10 flex flex-row items-center justify-between w-full h-20 px-10 border-b border-slate-900">
       <a href="/">
         <h2>.lindaEskilsson</h2>
       </a>

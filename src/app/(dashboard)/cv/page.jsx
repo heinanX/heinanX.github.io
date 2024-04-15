@@ -32,7 +32,7 @@ const page = () => {
     <>
       <ArticleTwoCols
         component={CvSection}
-        custCss={"max-w-screen-xl py-2 gap-y-8 min-h-full md:grid-cols-2"}
+        custCss={"max-w-screen-xl gap-y-8 min-h-full md:grid-cols-2"}
       />
     </>
   );
