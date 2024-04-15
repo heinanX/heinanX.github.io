@@ -15,11 +15,7 @@ const PersonalitySection = () => {
 
   return (
     <>
-      <section className="items-center h-full article-section-centered lg:order-2">
-        <PersonalityTraits mouseAction={mouseAction} />
-      </section>
-      
-      <section className="text-center article-section text-custBackground">
+      <section className="text-center article-section text-custBackground lg:order-2">
         {showExample ? (
           <div className="w-full h-64 text-4xl font-bold lg:h-auto flex-center-row">
             {example}
@@ -33,6 +29,9 @@ const PersonalitySection = () => {
         )}
       </section>
 
+      <section className="items-center h-full article-section-centered">
+        <PersonalityTraits mouseAction={mouseAction} />
+      </section>
     </>
   );
 };

@@ -55,12 +55,15 @@ const currentStack = [
 const TechStackSection = () => {
   return (
     <>
-      <section className="article-section dark:text-custYellow lg:order-2">
-      <LargeHeadlineReversed text={'tech'} />
-      <LargeHeadline text={'stack'} custCss={'text-right'} />
+      <section className="article-section-centered dark:text-custYellow">
+        <div className="flex flex-col">
+          <LargeHeadlineReversed text={"tech"} />
+          <LargeHeadline text={"stack"} custCss={"text-right"} />
+          <LargeHeadlineReversed text={"so far"} />
+        </div>
       </section>
 
-      <section className="overflow-hidden text-center article-section">
+      <section className="px-8 overflow-hidden text-center article-section">
         <Carousel arr={currentStack} />
         <TechStack arr={currentStack} />
       </section>

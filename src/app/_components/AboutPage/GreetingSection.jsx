@@ -7,7 +7,15 @@ import LargeHeadlineReversed from "../Headings/LargeHeadlineReversed";
 const GreetingSection = () => {
   return (
     <>
-      <section className="flex flex-col items-center justify-center article-section lg:order-2">
+
+      <section className="article-section-centered">
+        <div className="flex flex-col">
+          <LargeHeadline text={"This is"} custCss={"text-left"} />
+          <LargeHeadlineReversed text={"Me 一"} custCss={"text-custHotpink text-right"} />
+          <LargeHeadline text={"Linda"} custCss={"text-left"} />
+        </div>
+      </section>
+      <section className="flex flex-col items-center justify-center article-section">
         <Image
           src={avatar}
           alt={
@@ -17,14 +25,6 @@ const GreetingSection = () => {
         />
 
         <ContactIcons textSize="text-4xl md:text-6xl" />
-      </section>
-
-      <section className="article-section-centered">
-        <div className="flex flex-col">
-          <LargeHeadline text={"This is"} custCss={"text-left"} />
-          <LargeHeadlineReversed text={"Me 一"} custCss={"text-custHotpink text-right"} />
-          <LargeHeadline text={"Linda"} custCss={"text-left"} />
-        </div>
       </section>
     </>
   );
