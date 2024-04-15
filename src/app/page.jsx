@@ -9,13 +9,17 @@ const Home = () => {
   const router = useRouter();
   const [loading, setLoading] = useState(true);
 
+// TODO: add logic and design for future "game" and future projects page,
+
   const handleBtnAction = (action) => {
     if (!action) {
-      localStorage.setItem("preference", "skillset");
-      return router.push("/skillset");
+      // localStorage.setItem("preference", "skillset");
+      // return router.push("/skillset");
+      return router.push("https://github.com/heinanX?tab=repositories");
     } else {
-      localStorage.setItem("preference", "secret-gateway");
-      router.push("/secret-gateway");
+      // localStorage.setItem("preference", "secret-gateway");
+      // router.push("/secret-gateway");
+      router.push("/about");
     }
   };
 
@@ -25,10 +29,8 @@ const Home = () => {
     if (preference === "skillset" || preference === "secret-gateway") {
       console.log("im in here");
       return router.push("/" + preference);
-    } else {
-      console.log('setting loading to false');
-      setLoading(false);
     }
+    setLoading(false);
   }, []);
 
   return (
@@ -59,7 +61,7 @@ const Home = () => {
               onClick={() => handleBtnAction(false)}
               className="border border-white roundedBtn"
             >
-              skills first
+              projects first
             </button>
           </div>
         </div>

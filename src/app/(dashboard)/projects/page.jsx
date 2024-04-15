@@ -1,8 +1,9 @@
-import React from 'react'
+
+// TODO: Add logic and design for projects I want to highlight.
 
 const page = () => {
   return (
-    <div>this page is for my projects</div>
+    <div>projects</div>
   )
 }
 

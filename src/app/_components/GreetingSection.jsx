@@ -3,10 +3,6 @@ import ContactIcons from "./ContactIcons";
 import avatar from "@/app/_assets/self-portrait_photo.png";
 import AboutHeader from "./Headings/AboutHeader";
 
-const text = () => {
-    return <span>me</span>
-}
-
 const GreetingSection = () => {
   return (
     <>

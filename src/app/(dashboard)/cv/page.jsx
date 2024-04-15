@@ -1,8 +1,8 @@
-import React from 'react'
+import image from '@/_assets/'
 
 const page = () => {
   return (
-    <div>this page is for my cv</div>
+<></>
   )
 }
 
