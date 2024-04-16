@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import StaticBtn from "@/_components/Buttons/StaticBtn";
-import { useState } from "react";
+import {useState} from "react";
 
 const CV = ({ cvImage, href, altText, btnText }) => {
     const [activeHover, setActiveHover ] = useState(false);
