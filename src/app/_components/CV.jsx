@@ -7,7 +7,7 @@ const CV = ({ cvImage, href, altText, btnText }) => {
     const [activeHover, setActiveHover ] = useState(false);
   return (
     <>
-      <Image src={cvImage} alt={altText} className={`w-2/3 ${activeHover ? '' : 'opacity-90'}`} />
+      <Image src={cvImage} alt={altText} className={`w-2/3 max-w-80 ${activeHover ? '' : 'opacity-90'}`} />
       <a
         href={href}
         alt={`link to ${altText}`}
