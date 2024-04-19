@@ -1,7 +1,7 @@
 "use client";
 import TechStack from "@/_components/TechStack";
-import Carousel from "../Carousel";
-import LargeHeadline from "../Headings/LargeHeadline";
+import Carousel from "../../../Carousel";
+import LargeHeadline from "../../../Headings/LargeHeadline";
 
 const currentStack = [
   {

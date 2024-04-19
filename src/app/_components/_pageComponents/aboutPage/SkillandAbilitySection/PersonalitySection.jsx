@@ -1,7 +1,7 @@
 "use client";
 import PersonalityTraits from "@/_components/PersonalityTraits";
 import { useState } from "react";
-import LargeHeadline from "../Headings/LargeHeadline";
+import LargeHeadline from "../../../Headings/LargeHeadline";
 
 const PersonalitySection = () => {
   const [showTrait, setShowTrait] = useState(false);

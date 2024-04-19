@@ -1,6 +1,6 @@
 import avatar from "@/app/_assets/self-portrait_photo.png";
-import LargeHeadline from "../Headings/LargeHeadline";
-import ContactIcons from "../ContactIcons";
+import LargeHeadline from "../../../Headings/LargeHeadline";
+import ContactIcons from "../../../ContactIcons";
 import Image from "next/image";
 
 const ThisIsMeSection = () => {

@@ -1,9 +1,9 @@
 import ScrollToBottom from "@/app/_utilities/ScrollToBottom";
-import PersonalitySection from "@/app/_components/AboutPage/PersonalitySection";
-import TechStackSection from "@/app/_components/AboutPage/TechStackSection";
+import PersonalitySection from "@/app/_components/_pageComponents/aboutPage/SkillandAbilitySection/PersonalitySection";
+import TechStackSection from "@/app/_components/_pageComponents/aboutPage/TechStackSection/TechStackSection";
 import ArticleTwoCols from "@/app/_components/ArticleTwoCols";
-import CoverLetterSection from "@/app/_components/AboutPage/CoverLetterSection";
-import ThisIsMeSection from "@/app/_components/AboutPage/ThisIsMeSection";
+import CoverLetterSection from "@/app/_components/_pageComponents/aboutPage/CoverLetterSection/CoverLetterSection";
+import ThisIsMeSection from "@/app/_components/_pageComponents/aboutPage/ThisIsMeSection/ThisIsMeSection";
 
 const page = () => {
   return (
