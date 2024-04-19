@@ -9,26 +9,17 @@ const page = () => {
   return (
     <>
       <div className="relative flex flex-col items-center w-full">
-        <ArticleTwoCols
-          component={ThisIsMeSection}
-          custCss={""}
-        />
+        <ArticleTwoCols component={ThisIsMeSection} custCss={""} />
 
         <div className="flex justify-center w-full bg-custTurq">
-          <ArticleTwoCols
-            component={CoverLetterSection}
-            custCss={""}
-          />
+          <ArticleTwoCols component={CoverLetterSection} custCss={""} />
         </div>
 
         <div className="flex justify-center w-full bg-custHotpink">
           <ArticleTwoCols component={SkillAndAbilitySection} custCss={""} />
         </div>
 
-        <ArticleTwoCols
-          component={TechStackSection}
-          custCss={""}
-        />
+        <ArticleTwoCols component={TechStackSection} custCss={""} />
         <ScrollToBottom />
       </div>
     </>
