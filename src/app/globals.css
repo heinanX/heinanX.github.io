@@ -49,6 +49,9 @@ body {
   .article-section-centered {
     @apply w-full lg:w-1/2 flex justify-center
   }
+  .article-section-start {
+    @apply w-full lg:w-1/2 flex justify-start
+  }
 }
 
 @layer base {
