@@ -57,12 +57,12 @@ const TechStackSection = () => {
       <section className="article-section-centered dark:text-custYellow">
         <div>
           <LargeHeadline text={"tech"} />
-          <LargeHeadline text={"stack"} custCss={""} />
+          <LargeHeadline text={"stack"} />
           <LargeHeadline text={"so far"} />
         </div>
       </section>
 
-      <section className="px-8 overflow-hidden text-center article-section">
+      <section className="overflow-hidden text-center article-section">
         <Carousel arr={currentStack} />
         <TechStack arr={currentStack} />
       </section>

@@ -11,7 +11,7 @@ const CoverLetterSection = () => {
   return (
     <>
       <section className="article-section-centered lg:order-2">
-        <CoverLetterLanguage setLanguage={setLanguage} />
+        <CoverLetterLanguage setLanguage={setLanguage} language={language} />
       </section>
       
       <section className="text-sm leading-8 article-section md:px-4 md:text-base">
