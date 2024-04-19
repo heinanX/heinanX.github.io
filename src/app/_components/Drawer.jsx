@@ -1,20 +1,20 @@
 import { useState } from "react";
 
-const Drawer = ({ trait }) => {
+const Drawer = ({ title, body }) => {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <div className="w-full lg:hidden">
-      <div className={`transition-all overflow-hidden duration-500 ease-in-out ${isActive ? "h-[150px]" : "h-[28px]"}`}>
+    <div className="w-full h-full lg:hidden">
+      <div className={`transition-linear overflow-hidden duration-500 ease-in-out select-none ${isActive ? `max-h-60`: "max-h-7"}`}>
         <div
           className="flex flex-row gap-2 text-xl tracking-wider uppercase cursor-pointer"
           onClick={() => setIsActive(!isActive)}
         >
           <p className={isActive ? '' : 'hover:animate-pulse'}> {isActive ? '-' : '+'}</p>
-          {trait.item}
+          {title}
         </div>
         <p className={`text-custBackground pt-1`}>
-          {trait.example}.
+          {body}.
         </p>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import ArticleTwoCols from "@/app/_components/ArticleTwoCols";
 import cvImageEng from "@/_assets/cv-eng_img.JPG";
 import cvImageSwe from "@/_assets/cv-swe_img.JPG";
-import CV from "@/app/_components/CV";
+import CV from "@/app/_components/_pageComponents/cvPage/CV";
 
 const CvSection = () => {
   return (

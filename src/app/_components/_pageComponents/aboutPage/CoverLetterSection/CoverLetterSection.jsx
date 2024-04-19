@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import CoverLetterLanguage from "../CoverLetterLanguage";
+import CoverLetterLanguage from "./CoverLetterLanguage";
 import CoverLettersSv from "./CoverLetters/CoverLettersSv";
 import CoverLetterEng from "./CoverLetters/CoverLetterEng";
 import CoverLetterJp from "./CoverLetters/CoverLetterJp";

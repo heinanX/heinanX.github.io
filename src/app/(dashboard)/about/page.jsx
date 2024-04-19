@@ -1,9 +1,9 @@
 import ScrollToBottom from "@/app/_utilities/ScrollToBottom";
-import PersonalitySection from "@/app/_components/AboutPage/PersonalitySection";
-import TechStackSection from "@/app/_components/AboutPage/TechStackSection";
+import SkillAndAbilitySection from "@/app/_components/_pageComponents/aboutPage/SkillandAbilitySection/SkillandAbilitySection";
+import TechStackSection from "@/app/_components/_pageComponents/aboutPage/TechStackSection/TechStackSection";
 import ArticleTwoCols from "@/app/_components/ArticleTwoCols";
-import CoverLetterSection from "@/app/_components/AboutPage/CoverLetterSection";
-import ThisIsMeSection from "@/app/_components/AboutPage/ThisIsMeSection";
+import CoverLetterSection from "@/app/_components/_pageComponents/aboutPage/CoverLetterSection/CoverLetterSection";
+import ThisIsMeSection from "@/app/_components/_pageComponents/aboutPage/ThisIsMeSection/ThisIsMeSection";
 
 const page = () => {
   return (
@@ -22,7 +22,7 @@ const page = () => {
         </div>
 
         <div className="flex justify-center w-full bg-custHotpink">
-          <ArticleTwoCols component={PersonalitySection} custCss={""} />
+          <ArticleTwoCols component={SkillAndAbilitySection} custCss={""} />
         </div>
 
         <ArticleTwoCols

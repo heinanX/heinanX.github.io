@@ -1,13 +1,13 @@
 "use client";
-import PersonalityTraits from "@/_components/PersonalityTraits";
+import AbilityList from "@/app/_components/_pageComponents/aboutPage/SkillandAbilitySection/AbilityList";
 import { useState } from "react";
-import LargeHeadline from "../Headings/LargeHeadline";
+import LargeHeadline from "../../../Headings/LargeHeadline";
 
-const PersonalitySection = () => {
+const SkillAndAbilitySection = () => {
   const [showTrait, setShowTrait] = useState(false);
   const [activeTrait, setActiveTrait] = useState([]);
 
-  const traitHandler = (trait, boolean) => {
+  const abilityHandler = (trait, boolean) => {
     const formatted = trait.split(". ");
     setShowTrait(boolean);
     setActiveTrait(formatted);
@@ -16,15 +16,15 @@ const PersonalitySection = () => {
   return (
     <>
       <section className="lg:hidden article-section-centered text-custBackground">
-          <div className="flex flex-col items-center justify-center text-left cursor-default">
-            <LargeHeadline text={"skill"} />
-            <LargeHeadline text={"& 一 +"} custCss={"text-custYellow py-4"} />
-            <LargeHeadline text={"ability"} />
-          </div>
+        <div className="flex flex-col items-center justify-center text-left cursor-default">
+          <LargeHeadline text={"skill"} />
+          <LargeHeadline text={"& 一 +"} custCss={"text-custYellow py-4"} />
+          <LargeHeadline text={"ability"} />
+        </div>
       </section>
-      
+
       <section className="items-center w-full h-full pb-10 article-section-centered">
-        <PersonalityTraits traitHandler={traitHandler} />
+        <AbilityList abilityHandler={abilityHandler} />
       </section>
 
       <section className="hidden h-full lg:flex lg:justify-center article-section text-custBackground">
@@ -49,4 +49,4 @@ const PersonalitySection = () => {
   );
 };
 
-export default PersonalitySection;
+export default SkillAndAbilitySection;
