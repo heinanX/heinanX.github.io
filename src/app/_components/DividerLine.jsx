@@ -1,4 +1,3 @@
-
 const DividerLine = () => {
   return (
     <div className="relative w-full h-2 sm:w-[95%] bg-custYellow my-4 max-w-[550px]">

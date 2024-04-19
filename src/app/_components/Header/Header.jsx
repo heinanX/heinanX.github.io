@@ -23,7 +23,7 @@ const Header = () => {
         <h2>.lindaEskilsson</h2>
       </a>
 
-      <MobileHeaderNav />
+      <MobileHeaderNav navigation={navigation} />
 
       <nav className="hidden md:block">
         <ul className="flex flex-row space-x-6 text-lg lg:mr-10 lg:space-x-10 lg:text-xl">
