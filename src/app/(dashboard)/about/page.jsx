@@ -3,14 +3,14 @@ import PersonalitySection from "@/app/_components/AboutPage/PersonalitySection";
 import TechStackSection from "@/app/_components/AboutPage/TechStackSection";
 import ArticleTwoCols from "@/app/_components/ArticleTwoCols";
 import CoverLetterSection from "@/app/_components/AboutPage/CoverLetterSection";
-import GreetingSection from "@/app/_components/AboutPage/GreetingSection";
+import ThisIsMeSection from "@/app/_components/AboutPage/ThisIsMeSection";
 
 const page = () => {
   return (
     <>
       <div className="relative flex flex-col items-center w-full">
         <ArticleTwoCols
-          component={GreetingSection}
+          component={ThisIsMeSection}
           custCss={""}
         />
 
