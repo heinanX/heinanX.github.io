@@ -1,4 +1,4 @@
-import DisplayMessage from "./DisplayMessage/DisplayMessage";
+import DisplayMessage from "@/_components/DisplayMessage";
 
 const SecretMessage = () => {
   return (

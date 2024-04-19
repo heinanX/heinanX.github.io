@@ -1,5 +1,5 @@
-import LargeHeadline from "./Headings/LargeHeadline"
-import HeaderBtn from "./Buttons/HeaderBtn"
+import LargeHeadline from "../../../Headings/LargeHeadline"
+import HeaderBtn from "../../../Buttons/HeaderBtn"
 
 const CoverLetterLanguage = ({ setLanguage, language }) => {
   return (

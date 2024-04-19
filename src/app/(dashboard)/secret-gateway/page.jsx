@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SecretMessage from "../../_components/SecretMessage";
+import SecretMessage from "../../_components/_pageComponents/secretGatewayPage/SecretMessage";
 import silhouette from "../../_assets/silhouette.png"
 
 const page = () => {
