@@ -15,9 +15,21 @@ const PersonalitySection = () => {
 
   return (
     <>
-      <section className="h-full article-section-centered text-custBackground lg:order-2">
+      <section className="lg:hidden article-section-centered text-custBackground">
+          <div className="flex flex-col items-center justify-center text-left cursor-default">
+            <LargeHeadline text={"skill"} />
+            <LargeHeadline text={"& 一 +"} custCss={"text-custYellow py-4"} />
+            <LargeHeadline text={"ability"} />
+          </div>
+      </section>
+      
+      <section className="items-center w-full h-full pb-10 article-section-centered">
+        <PersonalityTraits traitHandler={traitHandler} />
+      </section>
+
+      <section className="hidden h-full lg:flex lg:justify-center article-section text-custBackground">
         {showTrait ? (
-          <div className="flex flex-col justify-center w-full font-bold tracking-wider h-72 lg:h-full lg:px-20 lg:text-3xl">
+          <div className="flex flex-col justify-center w-full h-full px-20 text-3xl font-bold tracking-wider">
             {activeTrait.map((item, i) => (
               <span key={i}>
                 <p>{item}.</p>
@@ -26,16 +38,12 @@ const PersonalitySection = () => {
             ))}
           </div>
         ) : (
-          <div className="flex flex-col items-center justify-center text-left cursor-default h-80 lg:h-full">
+          <div className="flex flex-col items-center justify-center h-full text-left cursor-default">
             <LargeHeadline text={"skill"} />
             <LargeHeadline text={"& 一 +"} custCss={"text-custYellow py-4"} />
             <LargeHeadline text={"ability"} />
           </div>
         )}
-      </section>
-
-      <section className="items-center h-full pb-10 article-section-centered">
-        <PersonalityTraits traitHandler={traitHandler} />
       </section>
     </>
   );
