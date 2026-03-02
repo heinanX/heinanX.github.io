@@ -1,6 +1,6 @@
 import ArticleTwoCols from "@/app/_components/ArticleTwoCols";
-import cvImageEng from "@/_assets/cv-eng_img.JPG";
-import cvImageSwe from "@/_assets/cv-swe_img.JPG";
+import cvImageEng from "@/_assets/cv-eng_img.PNG";
+import cvImageSwe from "@/_assets/cv-swe_img.PNG";
 import CV from "@/app/_components/_pageComponents/cvPage/CV";
 import DividerLine from "@/app/_components/DividerLine";
 
@@ -20,7 +20,7 @@ const CvSectionEng = () => {
       <section className="flex-col items-center w-full gap-y-10 sm:flex-row article-section-centered">
         <CV
           cvImage={cvImageEng}
-          href={"//LindaEskilsson_CV-eng.pdf"}
+          href={"/LindaEskilsson_CV-eng.pdf"}
           altText={"English version of CV"}
           btnText={"Download ENG"}
         />
